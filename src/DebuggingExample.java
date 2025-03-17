@@ -6,10 +6,9 @@ public class DebuggingExample {
         int[] numbers = {1, 2, 3, 4, 5};
         int sum = 0;
 
-        for (int i = 0; i < numbers.length; i++) { //Ошибка во втором параметре цикла(выход за пределы массива).
-            sum += numbers[i];                     // параметр до исправления ошибки:
-                                                   // for (int i = 0; i <= numbers.length; i++)
-        }
+        for (int i = 0; i < numbers.length; i++) { // Ошибка во втором параметре цикла(выход за пределы массива).
+            sum += numbers[i];                     // Параметр до исправления ошибки:
+        }                                          // for (int i = 0; i <= numbers.length; i++)
 
         System.out.println("Сумма чисел: " + sum);
     }
